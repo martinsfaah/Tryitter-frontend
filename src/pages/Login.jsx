@@ -53,7 +53,7 @@ export default function Login() {
   }
 
   return (
-    <div>
+    <div className='login-page'>
       <h1>TRYITTER</h1>
       <p>logo</p>
       <form>
