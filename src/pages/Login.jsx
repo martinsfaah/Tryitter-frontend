@@ -54,49 +54,51 @@ export default function Login() {
 
   return (
     <div className='login-page'>
-      <h1>TRYITTER</h1>
-      <p>logo</p>
-      <form>
-        <label htmlFor="username">
-          <p>Username</p>
-          <input
-            type="text"
-            value={ email }
-            onChange={ ({ target: { value } }) => setEmail(value) }
-          />
-        </label>
-        <label htmlFor="Password">
-          <p>Password</p>
-          <input
-            type="password"
-            value={ password }
-            onChange={ ({ target: { value } }) => setPassword(value) }
-          />
-        </label>
-        <div>
-          <button
-            type="submit"
-            disabled={ button }
-            onClick={ handleLoginButton }
-          >
-            login
-          </button>
-        </div>
-        <div>
-          <button
-            type="button"
-            onClick={ () => history.push('/register') }
-          >
-            Criar conta
-          </button>
-        </div>
-      </form>
-      {isLoginValid
-        ? null : (
-          <p data-testid="common_login__element-invalid-email">
-            Endereço de e-mail ou senha inválidos, tente novamente.
-          </p>
-        ) }
+      <div className='box'>
+        <h1>TRYITTER</h1>
+        <p>logo</p>
+        <form>
+          <label htmlFor="username">
+            <p>Username</p>
+            <input
+              type="text"
+              value={ email }
+              onChange={ ({ target: { value } }) => setEmail(value) }
+            />
+          </label>
+          <label htmlFor="Password">
+            <p>Password</p>
+            <input
+              type="password"
+              value={ password }
+              onChange={ ({ target: { value } }) => setPassword(value) }
+            />
+          </label>
+          <div>
+            <button
+              type="submit"
+              disabled={ button }
+              onClick={ handleLoginButton }
+            >
+              login
+            </button>
+          </div>
+          <div>
+            <button
+              type="button"
+              onClick={ () => history.push('/register') }
+            >
+              Criar conta
+            </button>
+          </div>
+        </form>
+        {isLoginValid
+          ? null : (
+            <p data-testid="common_login__element-invalid-email">
+              Endereço de e-mail ou senha inválidos, tente novamente.
+            </p>
+          ) }
+      </div>
     </div>
   );
 }
