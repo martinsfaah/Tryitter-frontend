@@ -49,7 +49,7 @@ export default function Register() {
     <>
     <div className='register-page'>
       <div className='box'>
-        <div>Register</div>
+        <h2>Register</h2>
         <form>
           <label htmlFor="email">
             <p>Email</p>
@@ -106,7 +106,7 @@ export default function Register() {
               onChange={ ({ target: { value } }) => setPassword(value) }
             />
           </label>
-          <div id='button'>
+          <div>
             <button
               type="submit"
               disabled={ button }
@@ -115,7 +115,7 @@ export default function Register() {
               Registrar
             </button>
           </div>
-          <div id='button'>
+          <div>
             <button
               type="button"
               onClick={ () => history('/login') }
