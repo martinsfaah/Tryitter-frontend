@@ -83,7 +83,7 @@ export default function Login() {
         <div>
           <button
             type="button"
-            onClick={ () => history.push('/register') }
+            onClick={ () => history('/register') }
           >
             Criar conta
           </button>

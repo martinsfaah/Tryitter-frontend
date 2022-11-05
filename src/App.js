@@ -10,7 +10,7 @@ import {
 // import { Provider } from './context/Provider';
 
 import Login from './pages/Login';
-// import Register from './pages/Register';
+import Register from './pages/Register';
 // import Feed from './pages/Feed';
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route exact path="/" element={<Navigate replace to="/login" />} />
         {/* <Route path="/feed" element={<Feed />} /> */}
-        {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
