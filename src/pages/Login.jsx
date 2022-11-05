@@ -56,7 +56,6 @@ export default function Login() {
     <div className='login-page'>
       <div className='box'>
         <h1>TRYITTER</h1>
-        <p>logo</p>
         <form>
           <label htmlFor="username">
             <p>Username</p>
