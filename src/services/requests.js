@@ -9,3 +9,9 @@ export async function requestInfo(body) {
 
   return result.data;
 }
+
+export async function requestPosts() {
+  const result = await api.get('/');
+
+  return result.data;
+}
