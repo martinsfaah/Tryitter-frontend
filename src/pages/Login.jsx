@@ -53,7 +53,6 @@ export default function Login() {
   return (
     <div>
       <h1>TRYITTER</h1>
-      <p>logo</p>
       <form>
         <label htmlFor="username">
           <p>Username</p>

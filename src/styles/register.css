@@ -23,6 +23,11 @@
     box-shadow: 5px 5px 5px 5px rgb(41, 48, 43);
 
   }
+
+  #button{
+    align-items: center;
+    flex-direction: ;
+  }
   
   .footer {
     bottom: 0;
