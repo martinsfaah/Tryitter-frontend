@@ -11,8 +11,8 @@ import {
 // import { Provider } from './context/Provider';
 
 import Login from './pages/Login';
-// import Register from './pages/Register';
-// import Feed from './pages/Feed';
+import Register from './pages/Register';
+import Feed from './pages/Feed';
 
 export default function App() {
   return (
@@ -20,8 +20,8 @@ export default function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route exact path="/" element={<Navigate replace to="/login" />} />
-        {/* <Route path="/feed" element={<Feed />} /> */}
-        {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/feed" element={<Feed />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
