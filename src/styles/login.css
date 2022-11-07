@@ -1,0 +1,32 @@
+
+.login-page {
+  align-items: center;
+  background: #036B52;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.box {
+  border-radius: 3%;
+  background: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+  height: auto;
+  justify-content: center;
+  padding: 1%;
+  width: auto;
+  box-shadow: 5px 5px 5px 5px rgb(41, 48, 43);
+
+}
+
+.footer {
+  bottom: 0;
+  position: fixed;
+  width: 90%;
+}
