@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import { requestPostUser  } from '../services/requests';
 
 import '../styles/register.css';
 
@@ -15,13 +16,13 @@ export default function Register() {
 
   async function handleRegisterButton(e) {
     e.preventDefault();
-    // try {
-    //   // const req = await requestInfo({ email, password });
-    //   localStorage.setItem('user', JSON.stringify(req));
-    //   setIsloginSuced(true);
-    // } catch (error) {
-    //   return setIsLoginValid(false);
-    // }
+    try {
+      const bodyRequisition = { email, password, username, name, modulo, status }
+      const req = await requestPostUser(bodyRequisition);
+      localStorage.setItem('user', JSON.stringify(req));
+    } catch (error) {
+      setButton(false);
+    }
   }
 
   useEffect(() => {

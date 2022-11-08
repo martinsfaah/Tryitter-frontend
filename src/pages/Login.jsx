@@ -28,7 +28,7 @@ export default function Login() {
   useEffect(() => {
     function validateNavigate() {
       if (localStorage.getItem('user')) {
-        // history.push('/feed');
+        history('/feed');
       }
     }
 
@@ -85,7 +85,7 @@ export default function Login() {
           <div>
             <button
               type="button"
-              onClick={ () => history.push('/register') }
+              onClick={ () => history('/register') }
             >
               Criar conta
             </button>

@@ -5,7 +5,13 @@ const api = axios.create({
 });
 
 export async function requestInfo(body) {
-  const result = await api.post('/login', body);
+  const result = await api.post('/user', body);
+
+  return result.data;
+}
+
+export async function requestPostUser(body) {
+  const result = await api.post('/user', body);
 
   return result.data;
 }
